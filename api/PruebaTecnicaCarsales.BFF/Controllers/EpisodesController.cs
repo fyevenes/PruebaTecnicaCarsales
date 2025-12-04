@@ -34,7 +34,7 @@ namespace PruebaTecnicaCarsales.BFF.Controllers
 
         }
 
-        [HttpGet("search")] 
+        [HttpGet("search")]
         public async Task<IActionResult> SearchEpisodes([FromQuery] string query)
         {
            if (string.IsNullOrWhiteSpace(query)){ return BadRequest("Debe especificar un término de búsqueda.");}          

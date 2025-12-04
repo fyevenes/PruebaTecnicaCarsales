@@ -1,12 +1,30 @@
-<p>episodes-list works!</p>
+<p>Carsales</p>
 <h2>Rick & Morty Episodes</h2>
+
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+ 
+<div>
+  <input [(ngModel)]="searchTerm" placeholder="Buscar episodio..." />
+  <button (click)="search()">Buscar</button>
+</div>
+<p>Total episodios cargados: {{ episodes.length }}</p>
 <ul>
   <li *ngFor="let ep of episodes">
-    {{ ep.id }} - {{ ep.name }} ({{ ep.episode }})
+    {{ ep.id }} - {{ ep.name }} ({{ ep.airDate }})
   </li>
 </ul>
-<div class="pagination">
-  <button (click)="prevPage()" [disabled]="page <= 1">Prev</button>
-  <span>Page {{ page }}</span>
-  <button (click)="nextPage()">Next</button>
+<!-- Solo aparece si no hay episodios cargados -->
+<button *ngIf="episodes.length === 0" (click)="loadEpisodes(1)">
+  Cargar página inicial
+</button>
+<!-- Paginación solo si hay páginas -->
+<div *ngIf="totalPages > 1">
+  <button (click)="loadEpisodes(currentPage - 1)" [disabled]="currentPage === 1">Anterior</button>
+  <span>Página {{ currentPage }} de {{ totalPages }}</span>
+  <button (click)="loadEpisodes(currentPage + 1)" [disabled]="currentPage === totalPages">Siguiente</button>
 </div>
+
+<!-- <pre>{{ episodes | json }}</pre> -->
+

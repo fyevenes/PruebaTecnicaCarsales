@@ -31,7 +31,7 @@ namespace PruebaTecnicaCarsales.BFF.Services
             if (!response.IsSuccessStatusCode) return null;
 
             var content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(content);
+            //Console.WriteLine(content);
             return JsonSerializer.Deserialize<EpisodeResponse>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }

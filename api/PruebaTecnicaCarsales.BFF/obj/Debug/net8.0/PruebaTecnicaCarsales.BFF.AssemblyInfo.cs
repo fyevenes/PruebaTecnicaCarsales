@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaTecnicaCarsales.BFF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d002800adcb22136c098e9cd767c76977be5370")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be62f5a40963ba652d512c5f014dd74610daa2b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaTecnicaCarsales.BFF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaTecnicaCarsales.BFF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
