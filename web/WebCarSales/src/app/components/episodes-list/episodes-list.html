@@ -1,0 +1,12 @@
+<p>episodes-list works!</p>
+<h2>Rick & Morty Episodes</h2>
+<ul>
+  <li *ngFor="let ep of episodes">
+    {{ ep.id }} - {{ ep.name }} ({{ ep.episode }})
+  </li>
+</ul>
+<div class="pagination">
+  <button (click)="prevPage()" [disabled]="page <= 1">Prev</button>
+  <span>Page {{ page }}</span>
+  <button (click)="nextPage()">Next</button>
+</div>

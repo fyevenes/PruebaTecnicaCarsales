@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "I+Lg7GYMLow=",
+  "success": true,
+  "projectFilePath": "C:\\Angular\\Examen\\CarSales\\api\\PruebaTecnicaCarsales.BFF\\PruebaTecnicaCarsales.BFF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zeroy\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0-rc.1.25451.107\\microsoft.aspnetcore.openapi.10.0.0-rc.1.25451.107.nupkg.sha512"
+  ],
+  "logs": []
+}
